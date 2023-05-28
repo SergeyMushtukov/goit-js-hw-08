@@ -31,7 +31,7 @@ function onFormSubmit(evt) {
 }
 
 function updateForm() {
-  dataFromLocalStorage = localStorage.getItem(LOCALSTORAGE_KEY);
+  const dataFromLocalStorage = localStorage.getItem(LOCALSTORAGE_KEY);
   if (dataFromLocalStorage) {
     formData = JSON.parse(dataFromLocalStorage);
     itemForUpdate.forEach(item => {
